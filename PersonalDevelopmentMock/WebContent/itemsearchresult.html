@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+
+<title>検索結果</title>
+</head>
+<body>
+
+<div id="container">
+
+	<header class="site-header">
+		<h1 class="site-logo font fs pl gnav__menu__item">
+ 	   		<a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/index.html">
+ 	 		<img src= "images/18675.png" class = "content1" alt="Tittle"></a></h1>
+
+		<div class = "a">
+ 	  	 	<form id="form02" action="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/itemsearchresult.html">
+    			<input class = "font" id="input02" type="text" placeholder="検索"><!--
+  				  /input間で改行したい場合はコメントアウト必須/
+   				 --><input id="submit02" type="submit" value="">
+			</form>
+		</div>
+
+   	    <ul class="gnav__menu font">
+            <li class="gnav__menu__item"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/regist.html">
+            	<span class="icon-box" style = "color : white;">
+            	<img src= "images/25559.png" class="content1 icon" alt="新規登録"></span></a></li>
+          	<li class="gnav__menu__item"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/userdata.html">
+          		<span class="icon-box" style = "color : white;">
+          		<img src= "images/29250.png" class="content1 icon" alt="ユーザ情報"></span></a></li>
+        	<li class="gnav__menu__item"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/login.html">
+        		<span class="icon-box" style = "color : white;">
+        		<img src= "images/37457.png" class="content1 icon" alt="ログイン"></span></a></li>
+          	<li class="gnav__menu__item pr"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/logout.html">
+          		<span class="icon-box" style = "color : white;">
+          		<img src= "images/37494.png" class="content1 icon" alt="ログアウト"></span></a></li>
+	        </ul>
+	</header>
+
+	<div id="main" class="content font center">
+<!--	<jsp:include page="/baselayout/header.jsp" />
+	<div class="section no-pad-bot" id="index-banner">
+		<div class="container">
+			<div class="row center">
+				<div class="input-field col s8 offset-s2 ">
+					<form action="ItemSearchResult">
+						<i class="material-icons prefix">search</i> <input type="text" name="search_word">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>-->
+			<h5 class="fs">検索結果</h5>
+			<p>検索結果10件</p>
+
+		<div class="section">
+			<!--   商品情報   -->
+
+				<c:forEach var="item" items="${itemList}" varStatus="status">
+
+	<div class="boxA center">
+		<div class="box1 md1">
+		<section class="card">
+			<img class="card-img" src="images/zosia-korcz-794557-unsplash.jpg" alt="からあげ">
+			<div class="card-content">
+				<h1 class="card-title">唐揚げ</h1>
+			</div>
+			<div class="card-link">
+    			<a href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/item.html">「唐揚げ」のページ</a>
+  			</div>
+		</section>
+		</div>
+				<div class="box1 md1">
+		<section class="card">
+			<img class="card-img" src="images/pexels-photo-61180.jpeg" alt="さらだ">
+			<div class="card-content">
+				<h1 class="card-title">サラダ</h1>
+			</div>
+			<div class="card-link">
+    			<a href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/item.html">「サラダ」のページへ</a>
+  			</div>
+		</section>
+		</div>
+		<div class="box1 md1">
+		<section class="card">
+			<img class="card-img" src="images/soup-1787997_640.jpg" alt="すーぷ">
+			<div class="card-content">
+				<h1 class="card-title">スープ</h1>
+			</div>
+			<div class="card-link">
+    			<a href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/item.html">「スープ」のページへ</a>
+  			</div>
+		</section>
+		</div>
+		<div class="box1 md1">
+		<section class="card">
+			<img class="card-img" src="images/kaboompics_Breakfast waffles with fresh raspberries.jpg" alt="わっふる">
+			<div class="card-content">
+				<h1 class="card-title">ワッフル</h1>
+			</div>
+			<div class="card-link">
+    			<a href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/item.html">「ワッフル」のページへ</a>
+  			</div>
+		</section>
+		</div>
+	</div>
+
+<!--					<div class="card">
+						<div class="card-image">
+							<a href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/item.html">
+							<img src="images/kaboompics_Breakfast waffles with fresh raspberries.jpg" width="800" height="500" alt="cooking">
+<!--							<a href="Item?item_id=${item.id}&page_num=${pageNum}">
+							<img src="img/${item.fileName}"></a>
+						</div>
+						<div class="card-content">
+							<span class="card-title">${item.name}</span>
+							<p>${item.price}円
+							</p>
+						</div>
+					</div>-->
+
+				<c:if test="${(status.index + 1) % 4 == 0}">
+
+
+				</c:if>
+				</c:forEach>
+
+		</div>
+		<div class="row center">
+			<ul class="pagination">
+				<!-- １ページ戻るボタン  -->
+<!--				<c:choose>
+					<c:when test="${pageNum == 1}">
+						<li class="disabled"><a><i class="material-icons">chevron_left</i></a></li>
+					</c:when>
+					<c:otherwise>
+						<li class="waves-effect"><a href="ItemSearchResult?search_word=${searchWord}&page_num=${pageNum - 1}"><i class="material-icons">chevron_left</i></a></li>
+					</c:otherwise>
+				</c:choose>
+
+				<!-- ページインデックス -->
+<!--				<c:forEach begin="${(pageNum - 5) > 0 ? pageNum - 5 : 1}" end="${(pageNum + 5) > pageMax ? pageMax : pageNum + 5}" step="1" varStatus="status">
+					<li <c:if test="${pageNum == status.index }"> class="active" </c:if>><a href="ItemSearchResult?search_word=${searchWord}&page_num=${status.index}">${status.index}</a></li>
+				</c:forEach>
+
+				<!-- 1ページ送るボタン -->
+<!--				<c:choose>
+				<c:when test="${pageNum == pageMax || pageMax == 0}">
+					<li class="disabled"><a><i class="material-icons">chevron_right</i></a></li>
+				</c:when>
+				<c:otherwise>
+					<li class="waves-effect"><a href="ItemSearchResult?search_word=${searchWord}&page_num=${pageNum + 1}"><i class="material-icons">chevron_right</i></a></li>
+				</c:otherwise>
+				</c:choose>-->
+			</ul>
+		</div>
+
+	    <!--省略-->
+	</div>
+	<footer class="site-footer font">
+	    <p class="copyright">@1 Soup 3 Veggies</p>
+	</footer>
+</div>
+</body>
+</html>

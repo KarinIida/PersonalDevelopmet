@@ -1,0 +1,302 @@
+@charset "UTF-8";
+.font{
+	font-family : "游明朝","Yu Mincho",serif;
+	font-size : 110%;
+}
+.white{
+	color : white;
+}
+ul{
+	list-style: none;
+}
+body {
+margin: 0;
+}
+img.content1{
+/*	position:absolute;*/
+	z-index: 2;
+	background: white;
+	border-radius: 10% 10% 10% 10%;
+	padding: 1px;
+}
+images.content1{
+	position:absolute;
+	z-index: 2;
+	background: white;
+	border-radius: 10% 10% 10% 10%;
+	padding: 1px;
+}
+.input{
+	font-family : "游明朝","Yu Mincho",serif;
+}
+.a{
+	padding-top: 25px;
+}
+a{
+	text-decoration:none;
+}
+#form02{
+    background-color: white;
+    width: 250px;
+    height: 25px;
+    border: 1px #ff6347 solid;
+}
+#form02 input{
+    vertical-align: top;
+    margin: 0px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+#form02{
+    border-radius: 10px;
+}
+#input02{
+    border: none;
+    width: 210px;
+    padding-left: 10px;
+}
+#submit02{
+    width: 30px;
+    border: none;
+    background-image: url(images/650.png);
+    background-position: center;
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+}
+
+.site-header{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    transition: .5s;
+    width: 100%;
+    z-index: 1;
+}
+.site-header.hide{
+    top: -63px;
+}
+.site-logo img{
+    height: 40px;
+    width: auto;
+}
+.gnav__menu{
+    display: flex;
+}
+.gnav__menu__item{
+    margin-left: 20px;
+    height: 40px;
+}
+.gnav__menu__item a{
+    color: #333;
+    text-decoration: none;
+}
+.hero{
+    max-height: 500px;
+    overflow: hidden;
+}
+.hero img{
+    height: auto;
+    width: 100%;
+}
+.content{
+    line-height: 1.6;
+    margin: 0 auto;
+    padding-top: 80px;
+    width: 800px;
+}
+.content-botton{
+    line-height: 1.6;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 5px;
+    background: #ff6347;
+}
+.content p{
+    margin-bottom: 40px;
+}
+.div#container{
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+.site-footer{
+	background: black;
+    color: white;
+	padding : 10px 0;
+	position: absolute;
+/*	bottom: 0; */
+	width: 100%;
+	height: 40px;
+}
+.bottom{
+	bottom: 0;
+}
+.copyright{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+.center{
+	text-align : center;
+}
+#wrap{
+  width:800px;
+  margin-right:auto;
+  margin-left:auto;
+}
+.right{
+	margin-left: 100%;
+}
+.right2{
+	margin-left: 80%;
+}
+.left{
+	margin-right: 1200px;
+}
+.left2{
+	margin-right: 80%;
+}
+.md1{
+	margin-bottom: 1em;
+}
+.fs{
+	font-size: 150%;
+}
+.red-text{
+	color : red;
+}
+#hoge{
+  display: inline;
+}
+.card {
+  width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  margin : 0 auto;
+  margin-bottom : 1em;
+}
+.card-buyhistory {
+  width: fit-content;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  margin: 0 auto;
+}
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+    height: 210px;
+    width: 350px;
+}
+.card-content {
+  padding: 10px;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.card-text {
+  color: #777;
+
+  line-height: 1.5;
+}
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 10px;
+}
+.card-link a {
+  text-decoration: none;
+  color: #0bd;
+  margin: 0 10px;
+}
+.card-link a:hover {
+  color: #0090aa;
+}
+.box1 {
+  border-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxA {
+  border: none;
+    content: "";
+    display: block;
+    clear: both;
+    overflow:hidden;
+}
+.pl{
+	padding-left: 5px;
+}
+.pr{
+	padding-right: 35px;
+}
+.icon{
+	height: 40px;
+    width: auto;
+}
+
+.icon-box{
+	display: inline-block;
+	width: 35.172px;
+	height: 40px;
+}
+html, body{
+	height: 100%;
+}
+.h{
+	height: 100%;
+}
+.overflow{
+	overflow: hidden;
+}
+#container{
+	position: relative;
+	width: 100%;
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
+}
+#main{
+	padding-bottom: 60px;
+}
+.center-align{
+	text-align: center ;
+}
+.sample6Wrap{
+	width: 300px;
+	height: -webkit-fill-available;
+	position: relative;
+}
+.sample6{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: auto;
+	height: 100px;
+}
+.bgc{
+	backgroud-color: #f08300;
+}
+.inline{
+	display: inline-block;
+}
+.inline li{
+	display: inline-block;
+	padding-inline-start: inherit;
+}
+bordered{
+	text-align : center;
+}

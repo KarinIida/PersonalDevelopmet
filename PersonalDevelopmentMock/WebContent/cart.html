@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/index.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/login.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/logout.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/regist.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/userdata.html">
+<link rel="stylesheet" href="style.css">
+
+<title>カート確認</title>
+</head>
+<body>
+
+<div id="container">
+
+	<header class="site-header">
+		<h1 class="site-logo font fs pl gnav__menu__item">
+ 	   		<a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/index.html">
+ 	 		<img src= "images/18675.png" class = "content1" alt="Tittle"></a></h1>
+
+		<div class = "a">
+ 	  	 	<form id="form02" action="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/itemsearchresult.html">
+    			<input class = "font" id="input02" type="text" placeholder="検索"><!--
+  				  /input間で改行したい場合はコメントアウト必須/
+   				 --><input id="submit02" type="submit" value="">
+			</form>
+		</div>
+
+   	    <ul class="gnav__menu font">
+            <li class="gnav__menu__item"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/regist.html">
+            	<span class="icon-box" style = "color : white;">
+            	<img src= "images/25559.png" class="content1 icon" alt="新規登録"></span></a></li>
+          	<li class="gnav__menu__item"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/userdata.html">
+          		<span class="icon-box" style = "color : white;">
+          		<img src= "images/29250.png" class="content1 icon" alt="ユーザ情報"></span></a></li>
+        	<li class="gnav__menu__item"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/login.html">
+        		<span class="icon-box" style = "color : white;">
+        		<img src= "images/37457.png" class="content1 icon" alt="ログイン"></span></a></li>
+          	<li class="gnav__menu__item pr"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/logout.html">
+          		<span class="icon-box" style = "color : white;">
+          		<img src= "images/37494.png" class="content1 icon" alt="ログアウト"></span></a></li>
+	        </ul>
+	</header>
+
+	<div id="main" class="content font">
+
+<!--	${cartActionMessage}-->
+			<h5 class="center fs">買い物かご</h5>
+
+		<div class="box1 section center">
+<!--			<form action="ItemDelete" method="POST">-->
+			<button type="submit" name="action" class = "font">削除</button>
+		</div>
+
+		<div class= "box1 section center">
+			<a href = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/buy.html">
+				<input type = "submit" name="action" value = "レジに進む" class = "font"></a>
+		</div>
+
+<!--					<c:forEach var="item" items="${cart}" varStatus="status">-->
+
+		<br>
+		<br>
+		<div class="boxA center">
+			<div class="box1 md1">
+			<section  class="card-buyhistory">
+				<div class="card-image">
+<!-- 				<a href="Item?item_id=${item.id}"><img src="img/${item.fileName}"> </a> -->
+					<img class="card-img" src="images/zosia-korcz-794557-unsplash.jpg" alt="からあげ">
+				</div>
+				<div class="card-content">
+					<span class="card-title">唐揚げ<!--${item.name}--></span>
+						<p>500円<!--${item.price}円--></p>
+							<p><input type="checkbox" id="${status.index}" name="delete_item_id_list" value="${item.id}" />
+								<label for="${status.index}">削除</label>
+							</p>
+				</div>
+			</section>
+		</div>
+<!--					<c:if test="${(status.index+1) % 4 == 0 }">
+				<div class="row">
+					</c:if>
+					</c:forEach>-->
+<!--			</form>-->
+		</div>
+	</div>
+
+	<footer class="site-footer font">
+	    <p class="copyright">@1 Soup 3 Veggies</p>
+	</footer>
+</div>
+</body>
+</html>
