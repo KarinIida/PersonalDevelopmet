@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/index.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/login.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/logout.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/userdata.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/regist.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/registresult.html">
+<link rel="stylesheet" href="style.css">
+
+<title>ユーザー登録/入力内容確認</title>
+</head>
+<body>
+
+<div id="container">
+
+	<header class="site-header">
+		<h1 class="site-logo font fs pl gnav__menu__item">
+ 	   		<a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/index.html">
+ 	 		<img src= "images/18675.png" class = "content1" alt="Tittle"></a></h1>
+
+		<div class = "a">
+ 	  	 	<form id="form02" action="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/itemsearchresult.html">
+    			<input class = "font" id="input02" type="text" placeholder="検索"><!--
+  				  /input間で改行したい場合はコメントアウト必須/
+   				 --><input id="submit02" type="submit" value="">
+			</form>
+		</div>
+
+   	    <ul class="gnav__menu font">
+            <li class="gnav__menu__item"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/regist.html">
+            	<span class="icon-box" style = "color : white;">
+            	<img src= "images/25559.png" class="content1 icon" alt="新規登録"></span></a></li>
+          	<li class="gnav__menu__item"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/userdata.html">
+          		<span class="icon-box" style = "color : white;">
+          		<img src= "images/29250.png" class="content1 icon" alt="ユーザ情報"></span></a></li>
+        	<li class="gnav__menu__item"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/login.html">
+        		<span class="icon-box" style = "color : white;">
+        		<img src= "images/37457.png" class="content1 icon" alt="ログイン"></span></a></li>
+          	<li class="gnav__menu__item pr"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/logout.html">
+          		<span class="icon-box" style = "color : white;">
+          		<img src= "images/37494.png" class="content1 icon" alt="ログアウト"></span></a></li>
+	        </ul>
+	</header>
+
+	<div id= "main" class = "content font">
+<!--		<form action="RegistResult" method="POST">-->
+			<h5 class = "center fs">入力内容確認</h5>
+
+		<div class="card">
+			<div class="card-content font">
+					<div class="center md1 ">名前<br>
+						<input type="text" name="user_name" readonly></div>
+
+					<div class="center md1">住所<br>
+						<input type="text" name="user_address" readonly></div>
+
+					<div class="center md1">ログインID<br>
+						<input type="text" name="login_id" readonly></div>
+
+					<div class="center md1">パスワード<br>
+						<input type="password" name="password" readonly></div>
+
+					<div class="center md1">上記内容で登録して
+						<br>よろしいでしょうか?</div>
+
+					<div class="box1 center">
+						<a href = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/regist.html">
+							<input type="submit" name=修正 value=修正 class = "font"></a>
+					</div>
+					<div class="center md1">
+						<a href = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/registresult.html">
+						<input  type="submit" name=登録 value=登録 class = "font"></a>
+					</div>
+			</div>
+		</div>
+<!--		</form>-->
+	</div>
+
+	<footer class="site-footer font">
+	    <p class="copyright">@1 Soup 3 Veggies</p>
+	</footer>
+</div>
+</body>
+</html>

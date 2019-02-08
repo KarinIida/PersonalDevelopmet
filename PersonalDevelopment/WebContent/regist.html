@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/index.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/login.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/logout.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/userdata.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/regist.html">
+<meta http-equiv = "List" content = "file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/registconfirm.html">
+<link rel="stylesheet" href="style.css">
+
+<title>ユーザ登録</title>
+</head>
+<body>
+
+<div id="container">
+
+		<header class="site-header">
+		<h1 class="site-logo font fs pl gnav__menu__item">
+ 	   		<a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/index.html">
+ 	 		<img src= "images/18675.png" class = "content1" alt="Tittle"></a></h1>
+
+		<div class = "a">
+ 	  	 	<form id="form02" action="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/itemsearchresult.html">
+    			<input class = "font" id="input02" type="text" placeholder="検索"><!--
+  				  /input間で改行したい場合はコメントアウト必須/
+   				 --><input id="submit02" type="submit" value="">
+			</form>
+		</div>
+
+   	    <ul class="gnav__menu font">
+            <li class="gnav__menu__item"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/regist.html">
+            	<span class="icon-box" style = "color : white;">
+            	<img src= "images/25559.png" class="content1 icon" alt="新規登録"></span></a></li>
+          	<li class="gnav__menu__item"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/userdata.html">
+          		<span class="icon-box" style = "color : white;">
+          		<img src= "images/29250.png" class="content1 icon" alt="ユーザ情報"></span></a></li>
+        	<li class="gnav__menu__item"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/login.html">
+        		<span class="icon-box" style = "color : white;">
+        		<img src= "images/37457.png" class="content1 icon" alt="ログイン"></span></a></li>
+          	<li class="gnav__menu__item pr"><a class="icon-box" href="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/logout.html">
+          		<span class="icon-box" style = "color : white;">
+          		<img src= "images/37494.png" class="content1 icon" alt="ログアウト"></span></a></li>
+	        </ul>
+	</header>
+
+	<div id= "main" class="content font center container">
+		<h5 class = "center fs">新規登録</h5>
+<!--			<c:if test="${validationMessage != null}">-->
+<!--				<P class="red-text">${validationMessage}</P>-->
+<!--			</c:if>-->
+		<div class="card">
+			<div class="card-content font">
+				<form action="file:///C:/pleiades/pleiades/workspace/PersonalDevelopmetMock/WebContent/registconfirm.html" method="POST">
+
+						<div class="center md1">名前<br>
+							<input name="user_name" type="text" required></div>
+
+						<div class="center md1">住所<br>
+							<input name="user_address" type="text" required></div>
+
+						<div class="center md1">ログインID<br>
+							<input name="login_id" type="text" required></div>
+
+						<div class="center md1">パスワード<br>
+							<input  name="password" type="password" required></div>
+
+						<div class="center md1">パスワード（確認用）<br>
+							<input name="confirm_password" type="password" required></div>
+
+							<p class="center-align center">
+								<button class="btn font" type="submit" name="action">確認</button>
+							</p>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer class="site-footer font">
+	    <p class="copyright">@1 Soup 3 Veggies</p>
+	</footer>
+</div>
+</body>
+</html>
